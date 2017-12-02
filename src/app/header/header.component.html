@@ -1,0 +1,48 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid nav-container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a routerLink="/" class="navbar-brand" (click)="brandClicked()">Manish Jaiswal</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav main-nav">
+        <li routerLinkActive="active">
+          <a routerLink="/about"
+             id="about"
+             [ngClass]="{'animated bounce activated':aboutClicked}"
+             (click)="onClick($event)">About</a>
+        </li>
+        <li routerLinkActive="active">
+          <a routerLink="/projects"
+             id="projects"
+             [ngClass]="{'animated bounce activated':projectsClicked}"
+             (click)="onClick($event)">Projects</a>
+        </li>
+        <li routerLinkActive="active">
+          <a routerLink="/experience"
+             id="experience"
+             [ngClass]="{'animated bounce activated':experienceClicked}"
+             (click)="onClick($event)">Experience</a>
+        </li>
+        <li routerLinkActive="active">
+          <a routerLink="/skills"
+             id="skills"
+             [ngClass]="{'animated bounce activated':skillsClicked}"
+             (click)="onClick($event)">Skills</a>
+        </li>
+        <li routerLinkActive="active">
+          <a routerLink="/contact"
+             id="contact"
+             [ngClass]="{'animated bounce activated':contactClicked}"
+             (click)="onClick($event)">Contact Me</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

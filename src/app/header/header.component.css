@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  /*font-family: 'Playfair Display', serif;*/
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+}
+
+.navbar{
+  /*background-color: white;*/
+  background-color: #333;
+}
+
+.nav-container{
+  margin-top:10px;
+  margin-bottom: 10px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 70%;
+  color: white;
+
+  margin-right: 10px;
+  border-bottom: 2px solid transparent;
+  background-color: transparent !important;
+  -webkit-transition: border-bottom 0.2s;
+  transition: 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:focus,
+.main-nav li a:active {
+  border-bottom: 2px solid #CE6D39;
+  background-color: transparent !important;
+  color: #CE6D39;
+  /*color: blue;*/
+  font-weight: bold;
+}
+
+.activated{
+  font-weight: bolder;
+  color: #CE6D39 !important;
+  border-bottom: 2px solid #CE6D39 !important;
+}
+
+.navbar-brand{
+  font-size: 120%;
+}

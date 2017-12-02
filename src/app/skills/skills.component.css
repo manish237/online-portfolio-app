@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+  /*font-family: 'Playfair Display', serif;*/
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+}
+.progress,.progress-bar{
+  height: 30px;
+}
+
+.progress-bar{
+  padding:4px;
+}
+
+.pbContent{
+  font-size: 75%;
+}
