@@ -1,13 +1,21 @@
-* {
-  box-sizing: border-box;
-  /*font-family: 'Playfair Display', serif;*/
+.navbar{
+  /*background-color: white;*/
+  background-color: #333;
+}
+
+.nav-top-container{
+  margin-bottom: 0px;
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
 }
 
-.navbar{
-  /*background-color: white;*/
-  background-color: #333;
+@media all and (max-width: 786px) and (min-width: 768px)
+{
+  .nav-top-container{
+    margin-bottom: 0px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+  }
 }
 
 .nav-container{
@@ -48,3 +56,6 @@
 .navbar-brand{
   font-size: 120%;
 }
+
+
+

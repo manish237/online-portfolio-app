@@ -1,13 +1,5 @@
-* {
-  box-sizing: border-box;
-  /*font-family: 'Playfair Display', serif;*/
-  font-family: 'Raleway', sans-serif;
-  /*font-size: 25px;*/
-}
-
 footer{
-  position: fixed;
-  left: 0;
+  position: relative;
   bottom: 0;
   width: 100%;
   color: white;
@@ -16,7 +8,7 @@ footer{
 
   height: 100px;
   line-height: 100px; /* Vertically center the text there */
-  font-size: 200%;
+  font-size: 40px;
 }
 
 .social-links {
@@ -38,10 +30,10 @@ footer{
   transition: color 0.2s;
 }
 
-.social-links li a:link,
+/*.social-links li a:link,
 .social-links li a:visited {
   font-size: 150%;
-}
+}*/
 
 .ion-social-github,
 .ion-social-linkedin,

@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Raleway:300,400,500');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

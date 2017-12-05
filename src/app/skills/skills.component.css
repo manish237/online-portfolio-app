@@ -1,9 +1,12 @@
-* {
-  box-sizing: border-box;
-  /*font-family: 'Playfair Display', serif;*/
+.parent-container{
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
 }
+
+.soft{
+  margin-bottom: 10px;
+}
+
 .progress,.progress-bar{
   height: 30px;
 }
@@ -14,4 +17,12 @@
 
 .pbContent{
   font-size: 75%;
+}
+
+@media (max-width: 340px) {
+
+  h1{
+    font-size: 120%;
+  }
+
 }

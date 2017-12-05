@@ -28,13 +28,16 @@ export class AboutComponent implements OnInit {
     // let type = new Typed('')
 
 
-    var typed = new Typed("#typed", {
-      strings: [this.aboutMeText],
-      typeSpeed:2,
-      startDelay:1000,
-      loop:true,
-      loopCount:1000
-    });
+ /*   var typed = new Typed("#name", {
+      strings: ["Manish Jaiswal"],
+      typeSpeed:200,
+      startDelay:2000,
+      cursorChar: '.',
+
+      // loop:true,
+      // loopCount:1000
+    });*/
+
   }
 
 }
