@@ -1,0 +1,26 @@
+.parent-container{
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+}
+
+.form-container
+{
+  padding: 20px;
+}
+
+.form-row{
+  margin:10px;
+  text-align: center;
+}
+.form-row:first-child{
+  margin-bottom: 20px;
+}
+
+@media (max-width: 405px) {
+
+  .parent-container{
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+  }
+
+}
