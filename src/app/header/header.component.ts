@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
 
+
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -17,15 +19,11 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-  }
-
-  onClick(event){
-    // console.log(event);
-    var currId = event.target.id;
-    // console.log(currId)
-
+    console.log(localStorage.getItem('currTab'));
+    const currId =     localStorage.getItem('currTab');
     if(currId==='about'){
       this.aboutClicked = true;
+      localStorage.setItem('currTab','about');
       this.projectsClicked = false;
       this.experienceClicked=false;
       this.skillsClicked=false;
@@ -33,6 +31,7 @@ export class HeaderComponent implements OnInit {
     } else if(currId==='projects'){
       this.aboutClicked = false;
       this.projectsClicked = true;
+      localStorage.setItem('currTab','projects');
       this.experienceClicked=false;
       this.skillsClicked=false;
       this.contactClicked = false;
@@ -40,6 +39,7 @@ export class HeaderComponent implements OnInit {
       this.aboutClicked = false;
       this.projectsClicked = false;
       this.experienceClicked=true;
+      localStorage.setItem('currTab','experience');
       this.skillsClicked=false;
       this.contactClicked = false;
     } else if(currId==='skills'){
@@ -47,6 +47,7 @@ export class HeaderComponent implements OnInit {
       this.projectsClicked = false;
       this.experienceClicked=false;
       this.skillsClicked=true;
+      localStorage.setItem('currTab','skills');
       this.contactClicked = false;
     } else if(currId==='contact'){
       this.aboutClicked = false;
@@ -54,6 +55,50 @@ export class HeaderComponent implements OnInit {
       this.experienceClicked=false;
       this.skillsClicked=false;
       this.contactClicked = true;
+      localStorage.setItem('currTab','contact');
+    }
+  }
+
+  onClick(event){
+    // console.log(event);
+    const currId = event.target.id;
+    // console.log(currId)
+
+    if(currId==='about'){
+      this.aboutClicked = true;
+      localStorage.setItem('currTab','about');
+      this.projectsClicked = false;
+      this.experienceClicked=false;
+      this.skillsClicked=false;
+      this.contactClicked = false;
+    } else if(currId==='projects'){
+      this.aboutClicked = false;
+      this.projectsClicked = true;
+      localStorage.setItem('currTab','projects');
+      this.experienceClicked=false;
+      this.skillsClicked=false;
+      this.contactClicked = false;
+    } else if(currId==='experience'){
+      this.aboutClicked = false;
+      this.projectsClicked = false;
+      this.experienceClicked=true;
+      localStorage.setItem('currTab','experience');
+      this.skillsClicked=false;
+      this.contactClicked = false;
+    } else if(currId==='skills'){
+      this.aboutClicked = false;
+      this.projectsClicked = false;
+      this.experienceClicked=false;
+      this.skillsClicked=true;
+      localStorage.setItem('currTab','skills');
+      this.contactClicked = false;
+    } else if(currId==='contact'){
+      this.aboutClicked = false;
+      this.projectsClicked = false;
+      this.experienceClicked=false;
+      this.skillsClicked=false;
+      this.contactClicked = true;
+      localStorage.setItem('currTab','contact');
     }
   }
 
