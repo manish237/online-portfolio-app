@@ -15,6 +15,8 @@ import { ProjectsComponent } from './projects/projects.component';
 import { SkillsComponent } from './skills/skills.component';
 import {MailHelperService} from './shared/mail-helper.service';
 import {PortfolioRoutingModule} from './app-routing.module';
+import {MatSnackBarModule} from '@angular/material';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -31,9 +33,11 @@ import {PortfolioRoutingModule} from './app-routing.module';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     ReactiveFormsModule,
     PortfolioRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    MatSnackBarModule
   ],
   providers: [MailHelperService],
   bootstrap: [AppComponent]

@@ -8,9 +8,7 @@ export class MailHelperService {
   constructor(private http:HttpClient) { }
 
   sendEmail(request){
-    this.http.post('/api/',request).subscribe((data)=>{
-      console.log(data);
-    });
+    return this.http.post('/api/',request);
   }
 
 }
