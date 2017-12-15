@@ -55,7 +55,7 @@ Banner
 }
 
 .about-content{
-  margin-top: 10%;
+  margin-top: 5%;
   font-size: 20px;
   font-family: 'Raleway', sans-serif;
 
@@ -64,7 +64,7 @@ Banner
 
 @media (max-width: 1299px) {
   .about-content{
-    margin-top: 15%;
+    margin-top: 10%;
     font-size: 18px;
 
   }
@@ -92,7 +92,7 @@ Banner
     width: 250px;
   }
   .about-content{
-    margin-top: 10%;
+    margin-top: 5%;
     font-size: 18px;
 
   }
@@ -123,7 +123,7 @@ Banner
   }
   .about-content{
     font-size: 15px;
-    margin-top: 20%;
+    margin-top: 10%;
 
   }
   .img-container{

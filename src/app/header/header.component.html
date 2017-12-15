@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default nav-top-container">
+<nav class="navbar navbar-default nav-top-container" role="navigation">
   <div class="container-fluid nav-container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -11,34 +11,39 @@
       <a routerLink="/" class="navbar-brand" (click)="brandClicked()">Manish Jaiswal</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav main-nav navbar-right">
-        <li routerLinkActive="active">
+      <ul class="nav navbar-nav main-nav navbar-right" role="menu">
+        <li routerLinkActive="active" role="menuitem">
           <a routerLink="/about"
              id="about"
+             role="link"
              [ngClass]="{'activated':aboutClicked}"
              (click)="onClick($event)">About</a>
         </li>
-        <li routerLinkActive="active">
+        <li routerLinkActive="active" role="menuitem">
           <a routerLink="/projects"
              id="projects"
+             role="link"
              [ngClass]="{'activated':projectsClicked}"
              (click)="onClick($event)">Projects</a>
         </li>
-        <li routerLinkActive="active">
+        <li routerLinkActive="active" role="menuitem">
           <a routerLink="/experience"
              id="experience"
+             role="link"
              [ngClass]="{'activated':experienceClicked}"
              (click)="onClick($event)">Experience</a>
         </li>
-        <li routerLinkActive="active">
+        <li routerLinkActive="active" role="menuitem">
           <a routerLink="/skills"
              id="skills"
+             role="link"
              [ngClass]="{'activated':skillsClicked}"
              (click)="onClick($event)">Skills</a>
         </li>
-        <li routerLinkActive="active">
+        <li routerLinkActive="active" role="menuitem">
           <a routerLink="/contact"
              id="contact"
+             role="link"
              [ngClass]="{'activated':contactClicked}"
              (click)="onClick($event)">Contact Me</a>
         </li>
