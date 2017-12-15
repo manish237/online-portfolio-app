@@ -8,9 +8,9 @@ footer{
   text-align: center;
   background-color: #333;
 
-  height: 100px;
-  line-height: 100px; /* Vertically center the text there */
-  font-size: 40px;
+  height: 80px;
+  line-height: 80px; /* Vertically center the text there */
+  font-size: 35px;
 }
 
 .social-links {

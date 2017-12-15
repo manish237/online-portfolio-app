@@ -49,8 +49,13 @@ Banner
   padding-top: 10%;
 }
 
+.profile-pic{
+  height: 300px;
+  width: 300px;
+}
+
 .about-content{
-  margin-top: 30px;
+  margin-top: 10%;
   font-size: 20px;
   font-family: 'Raleway', sans-serif;
 
@@ -59,12 +64,12 @@ Banner
 
 @media (max-width: 1299px) {
   .about-content{
-    margin-top: 20px;
+    margin-top: 15%;
     font-size: 18px;
 
   }
   .img-container{
-    padding-top: 10%;
+    padding-top: 8%;
     padding-left: 10%;
   }
 }
@@ -79,16 +84,20 @@ Banner
 @media (max-width: 991px) {
   .img-container{
     padding-top: 0;
-    padding-left: 40%;
+    padding-left: 35%;
     margin-bottom: 10px;
   }
   .profile-pic{
-    height: 150px;
-    width: 150px;
+    height: 250px;
+    width: 250px;
   }
   .about-content{
-    font-size: 12px;
+    margin-top: 10%;
+    font-size: 18px;
 
+  }
+  .desc-container{
+    margin-top: 20px;
   }
 }
 
@@ -109,11 +118,12 @@ Banner
     height: 15em;
   }
   .profile-pic{
-    height: 120px;
-    width: 120px;
+    height: 180px;
+    width: 180px;
   }
   .about-content{
-    font-size: 10px;
+    font-size: 15px;
+    margin-top: 20%;
 
   }
   .img-container{

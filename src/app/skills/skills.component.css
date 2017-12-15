@@ -2,7 +2,9 @@
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
 }
-
+.technical, .soft{
+  margin-top: 5%;
+}
 .soft{
   margin-bottom: 10px;
 }
@@ -17,6 +19,14 @@
 
 .pbContent{
   font-size: 75%;
+}
+
+h4{
+  font-size: 100%;
+}
+
+.soft-content{
+  font-size: 90%;
 }
 
 @media (max-width: 340px) {

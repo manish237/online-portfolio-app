@@ -11,35 +11,35 @@
       <a routerLink="/" class="navbar-brand" (click)="brandClicked()">Manish Jaiswal</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav main-nav">
+      <ul class="nav navbar-nav main-nav navbar-right">
         <li routerLinkActive="active">
           <a routerLink="/about"
              id="about"
-             [ngClass]="{'animated bounce activated':aboutClicked}"
+             [ngClass]="{'activated':aboutClicked}"
              (click)="onClick($event)">About</a>
         </li>
         <li routerLinkActive="active">
           <a routerLink="/projects"
              id="projects"
-             [ngClass]="{'animated bounce activated':projectsClicked}"
+             [ngClass]="{'activated':projectsClicked}"
              (click)="onClick($event)">Projects</a>
         </li>
         <li routerLinkActive="active">
           <a routerLink="/experience"
              id="experience"
-             [ngClass]="{'animated bounce activated':experienceClicked}"
+             [ngClass]="{'activated':experienceClicked}"
              (click)="onClick($event)">Experience</a>
         </li>
         <li routerLinkActive="active">
           <a routerLink="/skills"
              id="skills"
-             [ngClass]="{'animated bounce activated':skillsClicked}"
+             [ngClass]="{'activated':skillsClicked}"
              (click)="onClick($event)">Skills</a>
         </li>
         <li routerLinkActive="active">
           <a routerLink="/contact"
              id="contact"
-             [ngClass]="{'animated bounce activated':contactClicked}"
+             [ngClass]="{'activated':contactClicked}"
              (click)="onClick($event)">Contact Me</a>
         </li>
       </ul>
